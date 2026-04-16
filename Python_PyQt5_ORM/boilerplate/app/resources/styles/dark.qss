@@ -1,0 +1,275 @@
+/* === 다크 테마 스타일시트 (Dark Theme) ===
+   라이트 테마와 동일한 구조이며, 색상만 어두운 톤으로 변경되었습니다. */
+
+/* --- 전체 배경 --- */
+QWidget {
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+    font-family: "맑은 고딕", "Malgun Gothic", sans-serif;
+    font-size: 13px;
+}
+
+/* --- 메인 윈도우 --- */
+QMainWindow {
+    background-color: #1e1e2e;
+}
+
+/* --- 네비게이션 바 --- */
+#navbar {
+    background-color: #11111b;
+    border-right: 1px solid #313244;
+}
+
+#navButton {
+    background-color: transparent;
+    color: #a6adc8;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 14px;
+    text-align: left;
+    font-size: 13px;
+}
+
+#navButton:hover {
+    background-color: #313244;
+    color: #cdd6f4;
+}
+
+#navButton:checked {
+    background-color: #89b4fa;
+    color: #1e1e2e;
+}
+
+#navToggle {
+    background-color: transparent;
+    color: #a6adc8;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#navToggle:hover {
+    background-color: #313244;
+    color: #cdd6f4;
+}
+
+/* --- 헤더 --- */
+#header {
+    background-color: #181825;
+    border-bottom: 1px solid #313244;
+}
+
+#userLabel {
+    color: #cdd6f4;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#roleLabel {
+    color: #6c7086;
+    font-size: 12px;
+    margin-left: 4px;
+}
+
+#logoutButton {
+    background-color: transparent;
+    color: #f38ba8;
+    border: 1px solid #f38ba8;
+    border-radius: 4px;
+    padding: 4px 12px;
+    font-size: 12px;
+}
+
+#logoutButton:hover {
+    background-color: #f38ba8;
+    color: #1e1e2e;
+}
+
+/* --- 앱 타이틀 (로그인 화면) --- */
+#appTitle {
+    color: #cdd6f4;
+    background-color: transparent;
+}
+
+/* --- 버튼: 기본 (Primary) --- */
+#primaryButton {
+    background-color: #89b4fa;
+    color: #1e1e2e;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#primaryButton:hover {
+    background-color: #74c7ec;
+}
+
+#primaryButton:pressed {
+    background-color: #89dceb;
+}
+
+/* --- 버튼: 링크 스타일 --- */
+#linkButton {
+    background-color: transparent;
+    color: #89b4fa;
+    border: none;
+    font-size: 12px;
+}
+
+#linkButton:hover {
+    color: #74c7ec;
+}
+
+/* --- 입력 필드 --- */
+QLineEdit {
+    background-color: #313244;
+    color: #cdd6f4;
+    border: 1px solid #45475a;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 13px;
+}
+
+QLineEdit:focus {
+    border-color: #89b4fa;
+}
+
+QLineEdit:disabled {
+    background-color: #181825;
+    color: #6c7086;
+}
+
+/* --- 라벨 --- */
+QLabel {
+    background-color: transparent;
+    color: #cdd6f4;
+    font-size: 13px;
+}
+
+/* --- 콤보박스 (드롭다운) --- */
+QComboBox {
+    background-color: #313244;
+    color: #cdd6f4;
+    border: 1px solid #45475a;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 13px;
+}
+
+QComboBox:hover {
+    border-color: #89b4fa;
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 30px;
+}
+
+/* --- 체크박스 --- */
+QCheckBox {
+    color: #cdd6f4;
+    spacing: 8px;
+    font-size: 13px;
+}
+
+QCheckBox::indicator {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #45475a;
+    border-radius: 4px;
+    background-color: #313244;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #89b4fa;
+    border-color: #89b4fa;
+}
+
+/* --- 그룹박스 --- */
+QGroupBox {
+    border: 1px solid #45475a;
+    border-radius: 8px;
+    margin-top: 12px;
+    padding-top: 16px;
+    font-weight: bold;
+    color: #cdd6f4;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 12px;
+    padding: 0 6px;
+}
+
+/* --- 테이블 --- */
+QTableWidget {
+    background-color: #1e1e2e;
+    alternate-background-color: #181825;
+    border: 1px solid #313244;
+    border-radius: 6px;
+    gridline-color: #313244;
+}
+
+QTableWidget::item {
+    padding: 6px;
+}
+
+QTableWidget::item:selected {
+    background-color: #89b4fa;
+    color: #1e1e2e;
+}
+
+QHeaderView::section {
+    background-color: #181825;
+    color: #cdd6f4;
+    border: none;
+    border-bottom: 2px solid #45475a;
+    padding: 8px;
+    font-weight: bold;
+}
+
+/* --- 스크롤바 --- */
+QScrollBar:vertical {
+    background-color: #1e1e2e;
+    width: 8px;
+    border: none;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #45475a;
+    border-radius: 4px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #585b70;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0;
+}
+
+/* --- 상태 표시줄 --- */
+QStatusBar {
+    background-color: #11111b;
+    color: #6c7086;
+    border-top: 1px solid #313244;
+    font-size: 11px;
+}
+
+/* --- 구분선 --- */
+QFrame[frameShape="4"] {
+    color: #313244;
+}
+
+/* --- 메시지 박스 --- */
+QMessageBox {
+    background-color: #1e1e2e;
+}
+
+QMessageBox QLabel {
+    color: #cdd6f4;
+    font-size: 13px;
+}
