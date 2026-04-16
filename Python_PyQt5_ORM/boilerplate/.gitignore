@@ -1,0 +1,42 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.spec
+
+# === 가상환경 ===
+venv/
+.venv/
+env/
+
+# === 환경 변수 (비밀 정보 보호) ===
+.env
+
+# === 데이터베이스 ===
+*.db
+*.sqlite3
+data/
+
+# === 로그 ===
+logs/
+*.log
+
+# === IDE ===
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# === OS ===
+.DS_Store
+Thumbs.db
+
+# === Claude Code 프롬프트 로그 (민감 정보 보호) ===
+.claude/prompt-log.jsonl
+
+# === PyInstaller ===
+*.manifest
+*.spec

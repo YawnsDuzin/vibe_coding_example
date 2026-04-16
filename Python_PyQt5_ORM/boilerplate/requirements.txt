@@ -1,0 +1,30 @@
+# === 바이브코딩 교육용 보일러플레이트 패키지 목록 ===
+# 설치 방법: pip install -r requirements.txt
+
+# GUI 프레임워크 — 데스크톱 앱의 화면을 만드는 도구
+PyQt5==5.15.11
+
+# ORM — 데이터베이스를 Python 객체처럼 다루는 도구
+SQLAlchemy==2.0.36
+
+# DB 마이그레이션 — 데이터베이스 구조 변경을 안전하게 관리
+alembic==1.14.1
+
+# 환경 변수 — .env 파일에서 설정값을 읽어오는 도구
+python-dotenv==1.0.1
+
+# 비밀번호 해싱 — 비밀번호를 안전하게 암호화
+passlib[bcrypt]==1.7.4
+bcrypt==4.2.1
+
+# PostgreSQL 드라이버 — PostgreSQL 데이터베이스 연결 시 필요 (확장용)
+psycopg2-binary==2.9.10
+
+# 테스트 — 코드가 제대로 동작하는지 확인하는 도구
+pytest==8.3.4
+
+# 로깅 — 날짜별로 로그 파일을 관리
+# (logging은 Python 내장이므로 별도 설치 불필요)
+
+# 패키징 — 실행 파일(.exe)로 만드는 도구
+PyInstaller==6.11.1
